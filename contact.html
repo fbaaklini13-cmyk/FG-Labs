@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — FG Labs</title>
+  <meta name="description" content="Contact FG Labs in Beirut for websites, apps, and AI assistants." />
+  <meta name="theme-color" content="#cc5a34" />
+  <link rel="canonical" href="https://fglabs.example/" />
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — FG Labs" />
+  <meta property="og:description" content="Contact FG Labs in Beirut for websites, apps, and AI assistants." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:url" content="https://fglabs.example/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Organization", "name": "FG Labs", "url": "https://fglabs.example/", "logo": "https://fglabs.example/logo.svg", "sameAs": ["https://www.instagram.com/", "https://www.linkedin.com/"], "description": "FG Labs builds stunning websites and AI assistants.", "foundingDate": "2025-01-01"}
+  </script>
+</head>
+<body>
+<header class="nav reveal">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="logo.svg" alt="FG Labs logo" width="32" height="32" />
+      <span>FG Labs</span>
+    </a>
+    <button class="hamburger" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="apply.html" class="cta">Apply</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="container page-hero">
+  <h1>Contact</h1>
+  <p class="lead">Have a question or a project in mind? We’ll reply within 24 hours.</p>
+</section>
+
+<section class="container form-wrap reveal">
+  <!-- Updated to use Web3Forms for real submissions. The form now posts directly
+       to the Web3Forms API and includes a hidden access key so that form
+       submissions are emailed to the site owner. -->
+  <form class="form" method="POST" action="https://api.web3forms.com/submit">
+    <!-- Web3Forms access key to send submissions via email -->
+    <input type="hidden" name="access_key" value="154ad044-8717-4dbd-b155-e50a8a80997d">
+    <!-- Optional: identify the source of the submission -->
+    <input type="hidden" name="subject" value="New Contact Submission">
+    <input type="hidden" name="from_name" value="FG Labs">
+    <!-- Optional anti‑spam honeypot field; leave unchecked/hidden -->
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1">
+    <div class="grid-2">
+      <label>Name<input required name="name" placeholder="Your name"></label>
+      <label>Email<input required type="email" name="email" placeholder="you@company.com"></label>
+    </div>
+    <label>Message
+      <textarea name="message" rows="6" placeholder="Tell us how we can help…"></textarea>
+    </label>
+    <div class="form-actions">
+      <button class="btn btn-accent" type="submit">Send</button>
+      <span id="formStatus" class="muted" role="status"></span>
+    </div>
+  </form>
+  <div class="contact-meta">
+    <p><strong>Email:</strong> <a href="mailto:contact@fglabs.com">contact@fglabs.com</a></p>
+    <p><strong>Location:</strong> Beirut, Lebanon</p>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="FG Labs logo" width="28" height="28" />
+      <strong>FG Labs</strong>
+      <p>Web revamps, new builds, and AI assistants that convert.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@fglabs.com">contact@fglabs.com</a></li>
+        <li>Beirut, Lebanon</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© 2025 FG Labs. All rights reserved.</small>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

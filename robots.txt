@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fglabs.example/sitemap.xml
